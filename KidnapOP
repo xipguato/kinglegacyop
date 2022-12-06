@@ -1,0 +1,94 @@
+rconsoleclear()
+local is_key_present = isfile("key_sys.txt")
+if is_key_present == true then
+    local kery = readfile("key_sys.txt")
+    local onl_key = game:HttpGet("https://pastebin.com/raw/G2nJ5R27")
+    if kery == onl_key then
+        print("Executed script!")
+    else
+        rconsoleerr("Checking key..... Key is invalid~! Please delete the key_sys.txt in workspace folder of your executor!")
+        rconsolename("Key System")
+        end
+else
+    rconsolename("Key System")
+    rconsoleprint('@@BLUE@@')
+    rconsoleprint("Welcome to Key System! Thanks for using our script.")
+    wait(3)
+    rconsoleprint("\nTo get key, the link has been copied to your clipboard. Please paste the key here in order to continue >")
+    setclipboard("https://pastebin.com/raw/G2nJ5R27")
+    local key_inconsole = rconsoleinput()
+    local key_onl = game:HttpGet("https://pastebin.com/raw/G2nJ5R27")
+    if key_inconsole == key_onl then
+        print("Executed script!")
+        writefile("key_sys.txt", key_onl)
+        rconsoleclear()
+        rconsoleprint("Correct key! You may minimize this console now.")
+    else
+        rconsoleprint('@@RED@@')
+        rconsoleprint("\nInvalid key! Please try again! (Restarting key system in 5 seconds....)")
+        wait(5)
+        rconsoleclear()
+        rconsolename("Key System")
+    rconsoleprint('@@BLUE@@')
+    rconsoleprint("Welcome to Key System! Thanks for using our script.")
+    wait(3)
+    rconsoleprint("\nTo get key, the link has been copied to your clipboard. Please paste the key here in order to continue >")
+    setclipboard("https://pastebin.com/raw/G2nJ5R27")
+    local key_inconsole = rconsoleinput()
+    local key_onl = game:HttpGet("https://pastebin.com/raw/G2nJ5R27")
+    if key_inconsole == key_onl then
+        print("Executed script!")
+        writefile("key_sys.txt", key_onl)
+        rconsoleclear()
+        rconsoleprint("Correct key! You may minimize this console now.")
+    else
+        rconsoleprint('@@RED@@')
+        rconsoleprint("\nInvalid key! Please try again! (Closing game in 5 seconds.....)")
+        wait(5)
+        game:shutdown()
+    end
+    end
+end
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+
+
+function Script()
+    local Window = Library.CreateLib("PoomSCRIPT", "DarkTheme")
+
+
+
+    local Tab = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+
+
+--script
+
+Section:NewButton("KIDNAP", "BRING PLAYER", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xipguato/playergui342/main/Kidnap"))()
+end)
+
+Section:NewButton("KIDNAPALL", "BRINGALL PLAYER", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xipguato/kidnap/main/kinglegacy"))()
+end)
+
+Section:NewButton("INFSKILL", "WORKSOON", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xipguato/infskill/main/workforsomesword"))()
+end)
+
+Section:NewButton("kinglegacy", "teleport", function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))((
+
+        Section:NewButton("bloxfruitop", "bloxfruit fastfarm", function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/AkiraNus/UniquehubKak/main/FreeCr.Xenonhub"))()
+            Section:NewButton("kinglegacychinese", "penguim op", function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Penguim852/Penguinhack/main/PenguinKing?)()
+    end
+        end
+end)
+end)
+end)
+ 
